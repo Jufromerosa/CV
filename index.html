@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    
+    <title>Juan Felipe Romero Sanabria</title>
+    <link rel="shortcut icon" href="icon.ico" />
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="" class="link" target="_blank" 
+          >Felipe</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Felipe Romero.</span></h1>
+        <h2 class="about__role">Mechatronics Engineering student.</h2>
+        <p class="about__desc">
+          Hi! I am Felipe, a Mechatronic Engineer Student at Colombian National University currently doing a exchange a RWTH Aachen University in the programme of Computer Science, interested in programming, control theory, design and especially in computer vision, driven by a deep interest for learning and motivated to search innovative solutions through the lense of Engineering and Optimization.
+        </p>
+
+        <div class="about__contact center">
+          <a href="https://drive.google.com/file/d/1TFuuh-av6jWXIrLzG4MyZnrth5L_r-FO/view?usp=sharing" target="_blank">
+            <span class="btn btn--outline"> Resume</span>
+          </a>
+        </div>
+
+        <div class="about__contact center">
+          <a
+            href="https://www.linkedin.com/in/feliperomers/"
+            aria-label="mail"
+            class="link link--icon"
+            target="_blank"
+          >
+          <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Photo Sphere</h3>
+            <p class="project__description">
+              System for taking and projecting 360 images for the representation of warehouses for the Netlogistik company, which has a connection to the WMS, in order to represent the warehouses in a virtual environment.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>3 DOF Leg Prototype for Kinematics Experimentation.</h3>
+            <p class="project__description">
+              Design of an experimentation platform for the
+National University of Colombia, Bogota headquarters that allows validating control algorithms
+on a three-degree-of-freedom leg of a quadrupedal robot
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Bicibu</h3>
+            <p class="project__description">
+              Automation manufacturing process: Bicycles, Modeling and automation of some processes that are carried out during the manufacture of bamboo bicycles in two different bicycle lines:
+              Hybrid city bike and Coaster city bike
+            </p>
+          </div>
+
+          <div class="project">
+            <h3> Upper Limb Exoskeleton Prototype</h3>
+            <p class="project__description">
+              Study, design and construction of a scale prototype of a section of a torso exoskeleton, which accompanies the movements of the worker's right arm and allows to reduce the effort made by the biceps when subjecting it to the usual loads of its work activity.
+            </p>
+          </div>
+          <div class="project">
+            <h3> Pulse detection remotely through digital cameras.</h3>
+            <p class="project__description">
+              Design of a program in python that allows to calculate an approximation of the pulse of a person from a video recorded by a digital camera.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>PETtit.</h3>
+            <p class="project__description">
+              Design of the rPETG obtaining process for the company PETitt Plastic with the aim of making use of recycled plastic by incorporating the production of filament from PET bottles for 3d printing.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Characterization of flexible actuators</h3>
+            <p class="project__description">
+              Flexible actuator movement verification system through camera for specific points.
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Line follower</h3>
+            <p class="project__description">
+              Design and control of a competitive speed line follower from an embedded system.
+            </p>
+          </div>
+          <div class="project">
+            <h3>Box bender</h3>
+            <p class="project__description">
+              Design of PLC control algorithm for bending machine, based on speed profiles.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Matlab</li>
+          <li class="skills__list-item btn btn--plain">Python 3</li>
+          <li class="skills__list-item btn btn--plain">Java</li>
+          <li class="skills__list-item btn btn--plain">CAD 3D</li>
+          <li class="skills__list-item btn btn--plain">C/C++</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">LaTeX</li>
+          <li class="skills__list-item btn btn--plain">Microcontrollers</li>
+        </ul>
+      </section>
+
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Personal Strengths</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Design</li>
+          <li class="skills__list-item btn btn--plain">Research</li>
+          <li class="skills__list-item btn btn--plain">Decision making</li>
+          <li class="skills__list-item btn btn--plain">Time management</li>
+          <li class="skills__list-item btn btn--plain">Goal Oriented</li>
+          <li class="skills__list-item btn btn--plain">Autonomous learning</li>
+          <li class="skills__list-item btn btn--plain">Adaptability</li>
+          <li class="skills__list-item btn btn--plain">Creativity</li>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:juanfelipe0153@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
