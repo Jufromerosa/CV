@@ -87,9 +87,50 @@
         <div class="projects__grid">
           <div class="project">
             <h3>Photo Sphere</h3>
-            <iframe width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
+            <div class="video-player">
+              <video id="video">
+                <source src="media/photoSphere.mp4" type="video/mp4" />
+              </video>
+              <div class="controls">
+                <button class="play-button control-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  class="timeline"
+                  value="0"
+                />
+                <button class="sound-button control-button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            
             <p class="project__description">
               System for taking and projecting 360 images for the representation of warehouses for the Netlogistik company, which has a connection to the WMS, in order to represent the warehouses in a virtual environment.
             </p>
