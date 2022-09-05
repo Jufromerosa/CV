@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="kwg-video-player.min.css" />
+<script src="kwg-video-player.min.js"></script>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -15,15 +17,16 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="styles.css" />
-    
+    <link rel="stylesheet" type="text/css" href="kwg-video-player.css" />
+    <script src="kwg-video-player.js"></script>
+
     <title>Juan Felipe Romero Sanabria</title>
     <link rel="shortcut icon" href="icon.ico" />
   </head>
   <body class="light" id="top">
     <header class="header center">
       <h3>
-        <a>Felipe</a
-        >
+        <a>Felipe</a>
       </h3>
 
       <nav class="nav center">
@@ -59,11 +62,19 @@
         <h1>Hi, I am <span class="about__name">Felipe Romero.</span></h1>
         <h2 class="about__role">Mechatronics Engineering student.</h2>
         <p class="about__desc">
-          Hi! I am Felipe, a Mechatronic Engineer Student at Colombian National University currently doing a exchange a RWTH Aachen University in the programme of Computer Science, interested in programming, control theory, design and especially in computer vision, driven by a deep interest for learning and motivated to search innovative solutions through the lense of Engineering and Optimization.
+          Hi! I am Felipe, a Mechatronic Engineer Student at Colombian National
+          University currently doing a exchange a RWTH Aachen University in the
+          programme of Computer Science, interested in programming, control
+          theory, design and especially in computer vision, driven by a deep
+          interest for learning and motivated to search innovative solutions
+          through the lense of Engineering and Optimization.
         </p>
 
         <div class="about__contact center">
-          <a href="https://drive.google.com/file/d/1TFuuh-av6jWXIrLzG4MyZnrth5L_r-FO/view?usp=sharing" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/1TFuuh-av6jWXIrLzG4MyZnrth5L_r-FO/view?usp=sharing"
+            target="_blank"
+          >
             <span class="btn btn--outline"> Resume</span>
           </a>
         </div>
@@ -75,7 +86,7 @@
             class="link link--icon"
             target="_blank"
           >
-          <i aria-hidden="true" class="fab fa-linkedin"></i>
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
           </a>
         </div>
       </div>
@@ -87,109 +98,121 @@
         <div class="projects__grid">
           <div class="project">
             <h3>Photo Sphere</h3>
-            <div class="video-player">
-              <video id="video">
-                <source src="media/photoSphere.mp4" type="video/mp4" />
-              </video>
-              <div class="controls">
-                <button class="play-button control-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </button>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  class="timeline"
-                  value="0"
-                />
-                <button class="sound-button control-button">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"
-                    />
-                  </svg>
-                </button>
-              </div>
-            </div>
-            
+
+            <video id="video1" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
+
             <p class="project__description">
-              System for taking and projecting 360 images for the representation of warehouses for the Netlogistik company, which has a connection to the WMS, in order to represent the warehouses in a virtual environment.
+              System for taking and projecting 360 images for the representation
+              of warehouses for the Netlogistik company, which has a connection
+              to the WMS, in order to represent the warehouses in a virtual
+              environment.
             </p>
           </div>
 
           <div class="project">
-            <h3>3 DOF Leg Prototype for Kinematics Experimentation.</h3>
+            <h3>3 DOF Leg Prototype for Kinematics Experimentation.</h3>\
+            <video id="video2" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Design of an experimentation platform for the
-National University of Colombia, Bogota headquarters that allows validating control algorithms
-on a three-degree-of-freedom leg of a quadrupedal robot
+              Design of an experimentation platform for the National University
+              of Colombia, Bogota headquarters that allows validating control
+              algorithms on a three-degree-of-freedom leg of a quadrupedal robot
             </p>
           </div>
 
           <div class="project">
             <h3>Bicibu</h3>
+            <video id="video3" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Automation manufacturing process: Bicycles, Modeling and automation of some processes that are carried out during the manufacture of bamboo bicycles in two different bicycle lines:
+              Automation manufacturing process: Bicycles, Modeling and
+              automation of some processes that are carried out during the
+              manufacture of bamboo bicycles in two different bicycle lines:
               Hybrid city bike and Coaster city bike
             </p>
           </div>
 
           <div class="project">
-            <h3> Upper Limb Exoskeleton Prototype</h3>
+            <h3>Upper Limb Exoskeleton Prototype</h3>
+            <video id="video4" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Study, design and construction of a scale prototype of a section of a torso exoskeleton, which accompanies the movements of the worker's right arm and allows to reduce the effort made by the biceps when subjecting it to the usual loads of its work activity.
+              Study, design and construction of a scale prototype of a section
+              of a torso exoskeleton, which accompanies the movements of the
+              worker's right arm and allows to reduce the effort made by the
+              biceps when subjecting it to the usual loads of its work activity.
             </p>
           </div>
           <div class="project">
-            <h3> Pulse detection remotely through digital cameras.</h3>
+            <h3>Pulse detection remotely through digital cameras.</h3>
+            <video id="video5" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Design of a program in python that allows to calculate an approximation of the pulse of a person from a video recorded by a digital camera.
+              Design of a program in python that allows to calculate an
+              approximation of the pulse of a person from a video recorded by a
+              digital camera.
             </p>
           </div>
 
           <div class="project">
             <h3>PETtit.</h3>
+            <video id="video6" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Design of the rPETG obtaining process for the company PETitt Plastic with the aim of making use of recycled plastic by incorporating the production of filament from PET bottles for 3d printing.
+              Design of the rPETG obtaining process for the company PETitt
+              Plastic with the aim of making use of recycled plastic by
+              incorporating the production of filament from PET bottles for 3d
+              printing.
             </p>
           </div>
 
           <div class="project">
             <h3>Characterization of flexible actuators</h3>
+            <video id="video7" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Flexible actuator movement verification system through camera for specific points.
+              Flexible actuator movement verification system through camera for
+              specific points.
             </p>
           </div>
 
           <div class="project">
+        
             <h3>Line follower</h3>
+            <video id="video8" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Design and control of a competitive speed line follower from an embedded system.
+              Design and control of a competitive speed line follower from an
+              embedded system.
             </p>
           </div>
           <div class="project">
+
             <h3>Box bender</h3>
+            <video id="video9" width="320" height="240">
+              <source src="media/photoSphere.mp4" />
+              Your browser does not support HTML5 video.
+            </video>
             <p class="project__description">
-              Design of PLC control algorithm for bending machine, based on speed profiles.
+              Design of PLC control algorithm for bending machine, based on
+              speed profiles.
             </p>
           </div>
         </div>
@@ -233,18 +256,28 @@ on a three-degree-of-freedom leg of a quadrupedal robot
       </section>
     </main>
 
-    <footer class="footer">
-      
-    </footer>
+    <footer class="footer"></footer>
 
     <div class="scroll-container">
-    <div class="scroll-top">
-      <a aria-label="Scroll up" href="#top">
-        <i aria-hidden="true" class="fas fa-arrow-up"></i>
-      </a>
-    </div>
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
     </div>
 
     <script src="./script.js"></script>
   </body>
+  <script>
+    new kwgVideo("#video1");
+    new kwgVideo("#video2");
+    new kwgVideo("#video3");
+    new kwgVideo("#video4");
+    new kwgVideo("#video5");
+    new kwgVideo("#video6");
+    new kwgVideo("#video7");
+    new kwgVideo("#video8");
+    new kwgVideo("#video9");
+
+  </script>
 </html>
